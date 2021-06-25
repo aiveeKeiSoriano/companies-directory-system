@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     font-family: 'Helvetica', sans-serif;
+    box-sizing: border-box;
+    color: #383838;
 }
 
 :root {
@@ -11,6 +13,12 @@
     --shadow-button-hover: 0 4px 4px #0000002e;
     --shadow-default: 0 2px 6px 0 #00000061;
 
+}
+
+#root {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
 }
 
 .container {

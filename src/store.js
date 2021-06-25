@@ -1,8 +1,6 @@
-import {applyMiddleware, createStore} from "redux";
-import {logger} from "redux-logger/src";
-import thunk from "redux-thunk";
-import counterReducer from "./reducers/counterReducer";
+import {createStore} from "redux";
+import companyReducer from "./reducers/companyReducer";
 
-const middleware = [thunk, logger];
+// const middleware = [thunk, logger];
 
-export const store = createStore(counterReducer, applyMiddleware(...middleware));
+export const store = createStore(companyReducer);
